@@ -523,7 +523,125 @@ Paralelo idéntico para **Torre del Mar 180–240 k** como contraste de mercado.
 
 ---
 
-## 14. Recomendación final
+## 14. Deep-dive: Playamar y Los Álamos (Torremolinos)
+
+Zona elegida: **corredor costero este de Torremolinos**, desde el río Guadalhorcillo hasta el límite con el aeropuerto. Radio pequeño, micromercado muy diferenciado.
+
+### 14.1 Por qué tiene sentido (tesis resumida)
+
+- **Playa continua de 2,7 km** (Playamar → Los Álamos → Bajondillo a pie por el paseo).
+- **Cercanías C1**: estaciones **Los Álamos** y **Torremolinos** sirven la zona. **30 min hasta Málaga-María Zambrano**, 25 min a Centro Alameda. No necesitas coche para ir a la UMA.
+- **Precio medio inferior** a Carihuela y Benalmádena Costa: más m² por el mismo dinero.
+- **Demanda de alquiler anual** altísima (trabajadores de hostelería, servicios, nómadas digitales, funcionarios destacados). Rentabilidad bruta 5–6,5 %.
+- **Renovación del frente marítimo** en marcha, nuevo Palacio de Congresos ampliado.
+- **Airbnb / VUT**: Torremolinos está entre los municipios con moratoria anunciada a nuevas licencias → **las licencias existentes se revalorizan** si compras una con VUT activa.
+
+### 14.2 Submercados dentro de la zona
+
+| Sub-zona | Frontera | Precio €/m² 2026 | Producto típico | Perfil |
+|---|---|---|---|---|
+| **Playamar Torres** (1ª línea) | Avda. del Lido–Paseo Marítimo | 3.200–4.200 | Apartamento 50–75 m² en torre años 70-80 | Icónico, vistas frontales, comunidades grandes |
+| **Playamar retranqueado** (2ª–3ª línea) | tras Avda. Carlota Alessandri | 2.500–3.100 | Piso 70–90 m² bloque 80s-90s | Buena relación calidad/precio |
+| **Los Álamos playa** (1ª línea) | junto a estación y playa | 3.000–3.700 | Apartamento 60–80 m² | Más tranquilo, familiar |
+| **Los Álamos interior** (urb. privadas) | entre C/ Hoyo y N-340 | 2.500–3.200 | Piso 80–110 m² con piscina comunitaria | Menos vistas, más servicios |
+| **Nuevo Torrequebrada / promociones obra nueva** | junto Palacio Congresos | 3.500–4.500 | Obra nueva 70–95 m² | Premium, eficiencia energética A |
+
+### 14.3 Qué compras con 245.000 €
+
+| Opción | Ubicación | Producto realista |
+|---|---|---|
+| A | **Playamar 1ª línea torre 1975-1985** | 55–65 m², 1-2 dorm, vistas frontales, reformado |
+| B | **Playamar 2ª línea** | 75–90 m², 2-3 dorm, con terraza, posible reforma ligera |
+| C | **Los Álamos 1ª línea** | 65–75 m², 2 dorm con vistas laterales |
+| D | **Los Álamos interior urb. con piscina** | 90–100 m², 3 dorm, plaza de garaje incluida |
+| E | **Obra nueva reciente (2ª mano < 5 años)** | 55–70 m², 2 dorm, certificado A |
+
+**Mi favorita para ti**: **Opción B o D**. La A suena romántica pero los edificios de torres 70s-80s arrastran derramas, gastos de comunidad 200–350 €/mes y fachadas que piden rehabilitación cara.
+
+### 14.4 Lo que hay que mirar SÍ O SÍ antes de firmar
+
+#### Del edificio
+- [ ] **ITE (Inspección Técnica de Edificios)** vigente y favorable. Pedir copia.
+- [ ] **Actas últimas 5 asambleas** de la comunidad: buscar derramas votadas o en estudio (rehabilitación energética, ascensores, fachadas…).
+- [ ] **Cuentas anuales** comunidad y fondo de reserva (mínimo 10 % legal; si < eso, señal roja).
+- [ ] **Gasto comunidad** mensual y servicios incluidos (portero 24 h, piscina, jardines cuestan).
+- [ ] **Estado estructural**: fisuras, aluminosis (raro aquí pero posible en edificios 70s), filtraciones en bajantes.
+
+#### Del piso concreto
+- [ ] **Orientación real** (sur / sureste es la joya; norte interior resta 15 %).
+- [ ] **Nota simple registral** actualizada: cargas, embargos, derechos de tanteo.
+- [ ] **Catastro vs. realidad**: m² registrales coinciden con construidos; terrazas cerradas sin licencia son un riesgo.
+- [ ] **Certificado energético**: en edificios 70s es normal E-G; esto impacta la tasación y las ayudas.
+- [ ] **IBI anual** y **tasa de basuras**: Torremolinos tiene IBI alto.
+
+#### Del barrio
+- [ ] Ruido de aviones en Los Álamos: zona bajo trayectoria de aproximación desde el este. Hay horarios (las noches son silenciosas, vuelos prohibidos entre 23:00-07:00 mayoría del año), pero **visita a media tarde un día laborable** para comprobar frecuencia.
+- [ ] Actividad en temporada alta: Los Álamos aloja **festivales de música en verano** (históricamente Andalucía Big Festival). Ruido estacional puntual.
+- [ ] Aparcamiento: Playamar 1ª línea y Los Álamos playa son difíciles sin plaza de garaje propia → garaje suma 15–25 k al precio.
+
+### 14.5 Riesgos específicos de la zona
+
+| Riesgo | Probabilidad | Mitigación |
+|---|---|---|
+| **Derrama de rehabilitación energética (fachada, ascensor)** | Alta en torres > 40 años | Leer actas; si se ha votado en 2 años, negociar precio al baja |
+| **Retirada de licencia VUT** | Media | Si compras con VUT activa, verificar que está registrada y firmar cláusula que dé derecho a desistir si no se transmite |
+| **Subida IBI** | Baja-media | Revalorizaciones catastrales pendientes; incluir en cuenta de explotación |
+| **Saturación turística → depreciación del vecindario** | Baja (barrio residencial consolidado) | Playamar en particular es más residente que turista |
+| **Inundaciones por lluvia torrencial** | Puntual | Evitar plantas bajas; verificar mapa riesgos Junta Andalucía |
+| **Ruido aviones Los Álamos** | Cierta | Elegir Playamar o Los Álamos lejos del eje de pista |
+
+### 14.6 Negociación específica para esta zona
+
+- Margen a la baja habitual: **5–8 %** sobre precio publicado (menos que Málaga capital porque hay más oferta).
+- Los pisos con **necesidad de reforma** caen 10–12 % → gran oportunidad si tienes resto de presupuesto o puedes sacar una "hipoteca mixta compra + reforma" (Kutxabank e Ibercaja lo hacen).
+- Si el edificio tiene **derrama aprobada** pendiente de pago, **exigir que el vendedor la liquide en la escritura** o descontar el importe total del precio.
+- **Temporada baja (noviembre–febrero)**: mejor momento para negociar. Propietarios extranjeros con segunda residencia aceptan rebajas más agresivas fuera de verano.
+
+### 14.7 Edificios y urbanizaciones de referencia
+
+Sin garantía de disponibilidad, pero para que el ojo se vaya afinando:
+
+- **Playamar 1ª línea**: Torres de Playamar, Edificio Eurosol, Edificio Tropicana, Edificio Playa Azul, Nogalera Playa.
+- **Playamar 2ª línea**: zona Avda. Carlota Alessandri (edificios 80s-90s en mejor estado que las torres originales).
+- **Los Álamos**: Urbanización Los Álamos, Residencial Playa Álamos, Nuevo Torrequebrada (obra nueva), promociones junto al Palacio de Congresos ampliado.
+
+### 14.8 Plan de ataque en 30 días
+
+| Día | Acción |
+|---|---|
+| 1 | Reconfigurar alertas Idealista: "Playamar + Los Álamos, 200–260 k, ≥ 70 m², ≥ 2 dorm, ascensor, exterior". |
+| 2 | Alta en Fotocasa e Inmuebles24 con los mismos filtros (hay exclusivas cruzadas). |
+| 3–7 | Ver 8–10 pisos en un solo fin de semana (optimizar visitas seguidas). |
+| 8 | Primer contacto con **tasadora homologada** independiente para contrastar valores. |
+| 10 | Reunión con Kutxabank e Ibercaja: pedir oferta vinculante con **ejemplo concreto** (piso visto). |
+| 15 | Filtrar finalistas (máx. 3) con **checklist 14.4** aplicado. |
+| 20 | Segunda visita del finalista con **acompañante técnico** (arquitecto / aparejador, 100–200 € bien gastados). |
+| 25 | Negociación formal por escrito; contra-oferta. |
+| 30 | Firma de **arras penitenciales** si hay acuerdo y oferta bancaria cerrada. |
+
+### 14.9 Números finales con tu perfil en esta zona
+
+**Supuesto**: piso Playamar 2ª línea, 85 m², 2 dorm + terraza, ITE ok, comunidad sin derramas. Precio negociado **238.000 €**.
+
+| Concepto | Importe |
+|---|---|
+| Precio | 238.000 € |
+| ITP (7 % Andalucía) | 16.660 € |
+| Notaría + Registro + gestoría | 2.400 € |
+| Tasación | 400 € |
+| **Total desembolso compra** | **257.460 €** |
+| Hipoteca Kutxabank funcionario fija 2,30 %, 30 a, 100 % LTV | 238.000 € |
+| **Efectivo necesario** | **~19.460 €** |
+| Cuota mensual | **~915 €/mes** |
+| Esfuerzo sobre neto 2.450 €/mes | **37 %** |
+
+**Con 15.000 € actuales + 5–6 meses de ahorro disciplinado**, firmas sin aval familiar.
+
+Si añades **aval con garantía hipotecaria**, cuota baja a ~890 €/mes y esfuerzo al 36 %.
+
+---
+
+## 15. Recomendación final
 
 1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
 2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
