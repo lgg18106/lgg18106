@@ -292,7 +292,46 @@ Supuesto: tú cobras **2.000 €/mes**, padre/madre avalista con vivienda libre 
 
 ---
 
-## 11. Recomendación final
+## 11. Cálculo con tu salario real: 2.100 €/mes × 14 pagas
+
+**Neto prorrateado** = 2.100 × 14 / 12 = **2.450 €/mes** (cifra que usa la banca).
+
+| Esfuerzo | Cuota máx. |
+|---|---|
+| 30 % prudente | 735 € |
+| 35 % estándar | 857 € |
+| 40 % funcionario agresivo | **980 €** |
+
+### 11.1 Principal máximo por entidad (30 años, fijo)
+
+| Entidad | TIN | Esfuerzo aceptado | **Principal máx.** |
+|---|---|---|---|
+| **Kutxabank** | 2,30 % | 40 % | **254.000 €** |
+| **Ibercaja** | 2,35 % | 40 % | **252.000 €** |
+| **Unicaja** | 2,45 % | 35 % | **218.000 €** |
+| **Santander FF.PP.** | 2,55 % | 35 % | **215.000 €** |
+| **CaixaBank Colectivos** | 2,65 % | 35 % | **211.000 €** |
+
+A 35 años: Kutxabank sube a **~282.000 €**.
+
+### 11.2 Escenarios de viabilidad para 245 k
+
+| Configuración | Cuota | Ahorro que te hace falta | Viable |
+|---|---|---|---|
+| Kutxabank 100 % LTV, 30 a, sin aval | 980 €/m (40 % esf.) | ~28 k (gastos) | Sí, al límite |
+| Kutxabank 100 % LTV + aval garantía hipotecaria | 942 €/m (38 %) | ~27 k | **Óptimo** |
+| Unicaja 90 % + ahorro para 10 % + gastos | 803 €/m (33 %) | ~52 k | Solo si ahorras 3 años |
+| Donación 30 k familia + Unicaja 80 % fijo | 770 €/m (31 %) | ~20 k (ya tienes 15 k) | **Más limpio a largo plazo** |
+
+### 11.3 Lo que deberías pedir en la oficina
+
+Plantilla para la primera reunión (Kutxabank o Ibercaja):
+
+> "Funcionario fijo en la universidad, neto 2.100 €/mes en 14 pagas, sin otras deudas, 15 k ahorrados. Busco hipoteca fija a 30 años por 245.000 € sobre vivienda en Málaga tasada en ≥ 245.000 €. Puedo aportar aval con garantía hipotecaria sobre vivienda libre de cargas de mis padres, con pacto de liberación al amortizar el 20 %. ¿Qué TIN y bonificaciones me ofrecen? Quiero comparar con la oferta de Ibercaja y Unicaja."
+
+---
+
+## 12. Recomendación final
 
 1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
 2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
