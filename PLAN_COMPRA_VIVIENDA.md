@@ -329,9 +329,91 @@ Plantilla para la primera reunión (Kutxabank o Ibercaja):
 
 > "Funcionario fijo en la universidad, neto 2.100 €/mes en 14 pagas, sin otras deudas, 15 k ahorrados. Busco hipoteca fija a 30 años por 245.000 € sobre vivienda en Málaga tasada en ≥ 245.000 €. Puedo aportar aval con garantía hipotecaria sobre vivienda libre de cargas de mis padres, con pacto de liberación al amortizar el 20 %. ¿Qué TIN y bonificaciones me ofrecen? Quiero comparar con la oferta de Ibercaja y Unicaja."
 
+## 12. Zonas estratégicas en Málaga y alrededores
+
+### 12.1 Criterios que muevo en la matriz
+
+1. **Drivers de revalorización**: metro, hospital, PTA, AVE, Soho tech, turismo cultural.
+2. **Demanda de alquiler** (si algún día quieres rentabilizar): estudiantes UMA, nómadas digitales, familias jóvenes.
+3. **Precio €/m²** actual y velocidad de subida últimos 3 años.
+4. **Riesgo de saturación turística** (limitaciones municipales a VUT).
+5. **Distancia a tu centro de trabajo** (universidad UMA ≈ Teatinos/El Ejido).
+
+### 12.2 Málaga capital — ranking de inversión
+
+#### Tier 1 — Crecimiento estructural
+| Zona | €/m² 2026 | Perfil | Por qué invertir |
+|---|---|---|---|
+| **Teatinos** | 2.900–3.400 | Universitaria, familiar | UMA + Hospital Civil nuevo + línea 3 metro; demanda de alquiler garantizada. Tu zona natural. |
+| **Soho / Ensanche Centro** | 3.800–4.800 | Urbanita, cultural | Polo creativo y tech; Google Cibersecurity, Vodafone R&D. Rentabilidad alta. |
+| **Carretera de Cádiz (Huelin, La Luz)** | 2.400–3.000 | Costero, mixto | Gentrificación acelerada; paseo marítimo remodelado; metro cercano. |
+
+#### Tier 2 — Buen equilibrio precio/potencial
+| Zona | €/m² | Observaciones |
+|---|---|---|
+| **Cruz de Humilladero** | 2.000–2.500 | Barrio clásico, en mejora lenta pero constante. Cerca del centro. |
+| **Bailén-Miraflores** | 2.200–2.700 | Residencial tradicional, buena conexión, poco especulativo. |
+| **Trinidad / Perchel** | 2.300–3.000 | Muy cerca del centro, regeneración urbana en marcha (proyecto Perchel-Lagunillas). |
+| **Málaga Este (Pedregalejo, El Palo)** | 3.000–3.800 | Bohemio-familiar, estable, límite superior a tu presupuesto. |
+
+#### Tier 3 — Apuestas a largo plazo
+| Zona | €/m² | Tesis |
+|---|---|---|
+| **Campanillas / PTA** | 1.700–2.200 | Empleo tech de alto valor, nueva ampliación del PTA; hoy barato, en 10 años otra historia. |
+| **Churriana** | 1.900–2.400 | Aeropuerto, nueva autovía, expansión residencial; cuidado con ruido. |
+| **Puerto de la Torre** | 2.000–2.500 | Residencial, buena relación calidad-precio; crecimiento moderado. |
+
+#### Zonas a evitar para tu presupuesto
+- **Centro histórico / Malagueta / Limonar**: 4.500–6.500 €/m². Fuera de rango y con riesgo regulatorio turístico.
+- **Palma-Palmilla**: precio bajo pero estigma social que frena revalorización.
+
+### 12.3 Corona metropolitana — alternativas si buscas más m²
+
+| Municipio | €/m² | Conexión con Málaga | Tesis de inversión |
+|---|---|---|---|
+| **Rincón de la Victoria** | 2.200–2.800 | 15 min coche + cercanías proyectada | Costa, familiar, alta demanda; mejor ratio calidad/precio del área. |
+| **Alhaurín de la Torre** | 1.900–2.400 | 20 min | Residencial unifamiliar, servicios maduros, crecimiento sostenido. |
+| **Torremolinos** | 2.500–3.200 | Cercanías C1 (15 min) | Alquiler turístico muy rentable pero saturado; tipos de IBI altos. |
+| **Benalmádena** | 2.600–3.400 | Cercanías C1 | Perfil similar; algo más familiar. |
+| **Cártama / Estación de Cártama** | 1.400–1.800 | 25 min coche / cercanías C2 | Zona emergente, mucho suelo nuevo, buena entrada. |
+| **Mijas (Las Lagunas)** | 2.300–2.900 | 30 min | Consolidado, demanda extranjera, estable. |
+| **Vélez-Málaga / Torre del Mar** | 1.800–2.400 | 30 min autovía | Axarquía costera, revalorización moderada. |
+| **Antequera** | 1.200–1.600 | AVE 25 min a Málaga | Nodo logístico Andalucía Tech, precios muy bajos, tesis a 10 años. |
+
+### 12.4 Matriz de decisión según objetivo
+
+| Objetivo | Recomendación top | Alternativa |
+|---|---|---|
+| **Vivir + cercanía UMA** | Teatinos (piso 80–90 m², 245 k) | Puerto de la Torre |
+| **Vivir + centro vibrante** | Soho o Cruz de Humilladero | Perchel |
+| **Vivir + costa + familia** | Carretera de Cádiz (Huelin) | Rincón de la Victoria |
+| **Maximizar revalorización 10 a** | Campanillas / PTA | Cártama Estación |
+| **Máxima rentabilidad alquiler** | Soho (media estancia tech) | Teatinos (estudiantes) |
+| **Más m² por menos** | Alhaurín de la Torre | Cártama |
+
+### 12.5 Mi apuesta personal para tu perfil
+
+**Ganador**: **Teatinos** — 2 o 3 dormitorios, 80–90 m², 235–250 k.
+
+- Trabajas en la UMA → vives a 10 min andando o 5 en bici.
+- Demanda de alquiler casi infinita (estudiantes + PDI visitante) si algún día lo rentas.
+- Hospital Civil nuevo + línea 3 metro son catalizadores **ya ejecutándose**.
+- Producto líquido: si quisieras vender en 10 años, es de las zonas con menor descuento en la venta.
+
+**Alternativa value**: **Cruz de Humilladero o Bailén-Miraflores** — 250 k compran 100 m², cerca del centro, menos glamour pero mayor margen de mejora.
+
+**Outsider con upside**: **Rincón de la Victoria** — 240 k = piso con terraza a 200 m de la playa; si el precio Málaga capital sigue subiendo, el diferencial con Rincón se cerrará.
+
+### 12.6 Banderas rojas al visitar
+
+- Promoción de obra nueva con **más del 20 % vendido a extranjeros no residentes**: indicio de burbuja local.
+- Pisos con **licencia VUT activa** en edificios con comunidad enfrentada: próximos cambios normativos podrían bajar su valor.
+- Zonas en expectativa de **PGOU pendiente de aprobación**: incertidumbre sobre alturas y servicios.
+- Tasación muy por encima de portales: síntoma de operación hinchada.
+
 ---
 
-## 12. Recomendación final
+## 13. Recomendación final
 
 1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
 2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
