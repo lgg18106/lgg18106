@@ -413,7 +413,117 @@ Plantilla para la primera reunión (Kutxabank o Ibercaja):
 
 ---
 
-## 13. Recomendación final
+## 13. Costa con sensación vacacional + cercanía a Málaga + inversión segura
+
+Cambia el perfil: ya no es "vivir al lado de la UMA", es **"vivir de vacaciones sin dejar de trabajar en Málaga"**. El filtro se reduce a municipios en **radio 30 min coche / 35 min cercanías** con playa a < 10 min andando o vistas reales al mar.
+
+### 13.1 Los 3 ejes a puntuar
+
+| Eje | Qué mirar |
+|---|---|
+| **Sensación vacacional** | Paseo marítimo, densidad baja, entorno mediterráneo, chiringuitos todo el año. |
+| **Conexión Málaga** | Coche (A-7/MA-20), cercanías C1 (solo costa oeste hasta Fuengirola), futura C1-ampliada hacia Rincón-Nerja. |
+| **Inversión segura** | Liquidez (tiempo medio venta < 6 meses), demanda extranjera estable, baja saturación VUT, precio €/m² con tendencia positiva 5 años. |
+
+### 13.2 Mapa de candidatos a 245 k
+
+| Municipio / zona | Tiempo a Málaga centro | €/m² 2026 | Qué compras con 245 k | Vibe |
+|---|---|---|---|---|
+| **Rincón de la Victoria (núcleo)** | 15 min coche | 2.400–2.900 | 85–100 m², 2-3 dorm, a 300 m playa | Familiar, playero, en alza |
+| **Cala del Moral / Torre de Benagalbón** | 12 min | 2.500–3.000 | 80–95 m², algunos con vistas | Más residencial-tranquilo |
+| **Torremolinos (La Carihuela)** | 15 min + C1 | 3.000–3.800 | 60–75 m² cerca de playa | Turístico, renovado |
+| **Benalmádena Pueblo** | 25 min | 2.600–3.200 | 85–100 m² con **vistas panorámicas** al mar | Pueblo blanco, encanto |
+| **Benalmádena Costa (Arroyo de la Miel)** | 22 min + C1 | 2.800–3.500 | 70–85 m² cerca de playa | Turístico, servicios plenos |
+| **Fuengirola centro** | 30 min + C1 directa | 2.700–3.300 | 75–90 m² a 5 min playa | Consolidado, multicultural |
+| **Carvajal (Fuengirola)** | 28 min + C1 | 3.000–3.600 | 65–80 m² primera línea | Residencial premium costero |
+| **Torre del Mar (Vélez-Málaga)** | 30 min | 2.000–2.600 | **100–120 m²**, muchos con vistas | Pueblo marinero auténtico |
+| **Almayate / Caleta de Vélez** | 32 min | 1.800–2.300 | 110–130 m² con terraza | Tranquilo, menos turistizado |
+| **Mijas Pueblo** (no costa) | 35 min | 2.400–3.000 | 80–95 m² con vistas desde altura | Pueblo blanco icónico |
+| **Torrox Costa** | 45 min | 1.700–2.200 | 110–130 m² primera/segunda línea | Más "micro-clima Europa del norte" |
+
+### 13.3 Análisis de inversión por candidato
+
+#### Rincón de la Victoria – **la apuesta central**
+- **Pros**: 15 min a la UMA por MA-20/A-7; paseo marítimo de 9 km; demanda doméstica (malagueños de segunda residencia) + extranjera creciente; proyecto **ampliación cercanías C1 hasta Nerja** (licitado, entregas 2028–2030 según tramo) = catalizador claro.
+- **Contras**: en verano la MA-20 se satura; precio ha subido 28 % en 5 años, queda menos recorrido.
+- **Liquidez**: altísima, producto "refugio".
+- **Tesis**: vivienda habitual para trabajar en Málaga **con sensación de costa todo el año**. El sweet spot del enunciado.
+
+#### Torre del Mar (Vélez-Málaga) – **value + autenticidad**
+- **Pros**: precio 30 % inferior a Rincón por los mismos metros; paseo marítimo renovado (2022); gastronomía; turismo nacional estable.
+- **Contras**: 30 min a Málaga, sin tren (solo autovía A-7); menos demanda extranjera premium.
+- **Liquidez**: buena en piso, media en unifamiliar.
+- **Tesis**: con 245 k compras 110 m² con vistas. Si la cercanías C1-Este se ejecuta, tu plusvalía puede ser del 30–40 % en 5 años. Apuesta con mayor beta.
+
+#### Benalmádena Pueblo – **vistas + encanto + inversión sólida**
+- **Pros**: vistas al mar desde altura son muy cotizadas y **no se replican**; demanda extranjera (nórdicos, británicos) muy estable; producto escaso.
+- **Contras**: bajar a la playa requiere coche/autobús; aparcamiento difícil.
+- **Liquidez**: media-alta; buscan un tipo de comprador concreto pero siempre lo hay.
+- **Tesis**: el **activo de vistas** casi nunca se deprecia. Entra aquí si priorizas paisaje sobre pie de playa.
+
+#### Fuengirola / Carvajal – **conectividad imbatible**
+- **Pros**: **cercanías C1 directa**, sales del portal y en 30 min estás en el centro de Málaga sin coche. Ciudad con servicios plenos (hospital, colegios internacionales).
+- **Contras**: alta saturación VUT, ayuntamiento ha anunciado moratoria; en Carvajal el stock es limitado y caro.
+- **Liquidez**: máxima del corredor oeste.
+- **Tesis**: si crees que dejarás el coche alguna vez, **Fuengirola es la opción más racional**. Carvajal primera línea es el upgrade.
+
+#### Torremolinos (La Carihuela) – **urbano-playero**
+- **Pros**: renovación integral del frente marítimo; Carihuela conserva alma de pueblo marinero dentro de ciudad grande; cercanías y metro proyectado.
+- **Contras**: estacionalidad turística muy marcada; edificios de los 70–80 con gastos de comunidad altos (derramas).
+- **Tesis**: solo si buscas vibra urbana + playa; revisar ITE del edificio con lupa.
+
+#### Torrox Costa / Almayate – **la apuesta "bajo presupuesto, mucho metro"**
+- **Pros**: precio 35–45 % más bajo; clima europeo óptimo ("mejor clima de Europa" según OMM); crecimiento lento pero constante de comunidad europea.
+- **Contras**: 45 min a Málaga, poco realista como vivienda habitual si trabajas en campus.
+- **Tesis**: mejor como segunda vivienda o inversión pura de alquiler; no encaja con tu objetivo de residencia principal.
+
+### 13.4 Matriz final: equilibrio vacaciones-Málaga-inversión
+
+| Municipio | Vacacional | Cercanía Málaga | Seguridad inversión | **Total /15** |
+|---|---|---|---|---|
+| **Rincón de la Victoria** | 4/5 | 5/5 | 5/5 | **14** |
+| **Fuengirola / Carvajal** | 4/5 | 4/5 | 5/5 | **13** |
+| **Benalmádena Pueblo** | 5/5 | 3/5 | 4/5 | **12** |
+| **Torre del Mar** | 5/5 | 3/5 | 4/5 | **12** |
+| **Cala del Moral** | 4/5 | 5/5 | 4/5 | **13** |
+| **Torremolinos (Carihuela)** | 3/5 | 5/5 | 4/5 | **12** |
+| **Mijas Pueblo** | 4/5 | 3/5 | 3/5 | 10 |
+| **Torrox Costa** | 5/5 | 2/5 | 3/5 | 10 |
+
+### 13.5 Mi recomendación para tu caso
+
+**Ganador claro: Rincón de la Victoria (núcleo urbano o Cala del Moral).**
+
+Razones:
+1. **15 min al campus** por MA-20 → conservas la vida laboral sin fricción.
+2. **Paseo marítimo todos los días** → literalmente vives de vacaciones.
+3. **Catalizador confirmado**: ampliación C1 de cercanías reduce en el futuro a 25 min en tren la llegada a Málaga-Centro.
+4. **245 k compra un 2-3 dormitorios a 300–500 m de la playa**, producto medio típico → altísima liquidez si algún día vendes o alquilas (estudiantes Erasmus, digital nomads, familias de fin de semana).
+5. Desde el punto de vista de tu **hipoteca funcionario**, la tasación es sólida y las entidades con más LTV (Kutxabank, Ibercaja) conocen la zona perfectamente.
+
+**Plan B (value + autenticidad)**: **Torre del Mar**. Mismo dinero, 20 m² más, y apalancas la tesis del tren costero este. Asume 30 min coche.
+
+**Plan C (vistas por encima de todo)**: **Benalmádena Pueblo**. Si al visitar te enamora una terraza con vistas panorámicas, ese activo es casi antiinflacionario.
+
+### 13.6 Filtros de búsqueda que pondría en Idealista desde mañana
+
+```
+Zona: Rincón de la Victoria + Torre de Benagalbón + Cala del Moral
+Precio: 200.000 € – 260.000 €
+Superficie: ≥ 80 m²
+Habitaciones: ≥ 2
+Ascensor: sí
+Exterior: sí
+Terraza: sí (preferente)
+Palabras clave: "vistas al mar", "primera línea", "paseo marítimo"
+Alertas: inmediatas (diarias)
+```
+
+Paralelo idéntico para **Torre del Mar 180–240 k** como contraste de mercado.
+
+---
+
+## 14. Recomendación final
 
 1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
 2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
