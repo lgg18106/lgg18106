@@ -641,7 +641,111 @@ Si añades **aval con garantía hipotecaria**, cuota baja a ~890 €/mes y esfue
 
 ---
 
-## 15. Recomendación final
+## 15. Zonas con mayor potencial de revalorización 2026–2032
+
+La regla que aplico: la revalorización no nace del precio bajo actual, sino de **catalizadores físicos + demanda estructural + oferta restringida**. Con ese filtro, estas son mis apuestas ordenadas.
+
+### 15.1 Top-tier: catalizadores confirmados y ejecutándose
+
+#### 1. Soho-Perchel-Lagunillas (Málaga capital)
+- **Drivers**: polo tech (Google Cybersecurity Center, Vodafone R&D, TDK, Dekra); 3 museos en < 1 km; gentrificación en fase media.
+- **Motor específico**: **Proyecto Perchel-Lagunillas** de regeneración urbana con 2.000 viviendas y zonas verdes (licitaciones abiertas). Cuando esté en obra (2027–2030), el barrio se reposiciona.
+- **Tesis**: +30–45 % en 5–7 años sobre precio actual (~3.800 €/m²).
+- **Riesgo**: ya caro; margen de entrada limitado.
+
+#### 2. Teatinos-Universidad-Hospital Civil nuevo
+- **Drivers**: **Hospital Regional Universitario nuevo** (obras avanzadas, apertura 2028); **Metro línea 3** extensión; UMA sigue creciendo en plantilla.
+- **Tesis**: +20–30 % en 5 años. Suelo residual limitado en primera corona.
+- **Riesgo**: precio ya ha absorbido parte del efecto hospital.
+
+#### 3. Campanillas / PTA
+- **Drivers**: **Ampliación del Parque Tecnológico** (+200 ha fase III, plan aprobado); empresas ancla (Huawei, Oracle, Ericsson, IBM); llegada de startups.
+- **Tesis**: +35–50 % en 7–10 años. Es la zona con **mayor desfase entre precio y empleo de alto valor** que la rodea.
+- **Riesgo**: tejido urbano poco maduro hoy; vida de barrio modesta. Apuesta a largo.
+
+#### 4. Rincón de la Victoria y eje este
+- **Drivers**: **Extensión cercanías C1 Málaga-Nerja** (tramos licitados, entregas escalonadas 2028–2031); Senda Litoral; desarrollo urbanístico de Torre de Benagalbón.
+- **Tesis**: +25–35 % en 5–7 años cuando el tren esté operativo.
+- **Riesgo**: ya ha subido 28 % en 5 años; parte del efecto está dentro del precio.
+
+### 15.2 Segundo tier: alto potencial con algún ingrediente pendiente
+
+#### 5. Cártama Estación / Valle del Guadalhorce
+- **Drivers**: estación cercanías **C2 operativa**; autovía A-357 desdoblada; **suelo industrial nuevo** Parque Empresarial Intelhorce II; llegada de logística y data centers; precio €/m² todavía por debajo de 1.800 €.
+- **Tesis**: **+40–60 % en 10 años**. La mayor asimetría precio/potencial del área metropolitana.
+- **Riesgo**: timing. Si no llega el empleo cualificado, el upside se diluye.
+
+#### 6. Playamar-Los Álamos (tu zona)
+- **Drivers**: **Ampliación Palacio de Congresos** (obras 2025–2027, atrae MICE-turismo corporativo de alto gasto); **rehabilitación del paseo marítimo este**; Torremolinos en reposicionamiento post-estigma "turismo de masas"; moratoria VUT protege el valor residencial.
+- **Tesis**: +20–30 % en 5 años, superior en 1ª línea reformada.
+- **Ventaja estratégica**: compras aquí tu residencia y la revalorización cae en un activo que ya usas. Doble retorno (uso + capital).
+
+#### 7. Churriana
+- **Drivers**: **nueva hiperronda** (MA-40 en tramitación), ampliación del aeropuerto, cercanía al PTA, polígonos nuevos; crecimiento de vivienda unifamiliar.
+- **Tesis**: +25–35 % en 7 años.
+- **Riesgo**: ruido de aviones y presión urbanística descontrolada.
+
+#### 8. Antequera
+- **Drivers**: **nodo AVE Málaga-Sevilla-Granada-Córdoba**; **base logística Bobadilla** (conexión mercancías Algeciras); suelo industrial Andalucía Tech; clima apto teletrabajo.
+- **Tesis**: **+40–70 % en 10 años** si el plan logístico se ejecuta.
+- **Riesgo**: tesis a más largo plazo; no es costa, no es capital.
+
+### 15.3 Tercer tier: apuestas contrarian
+
+#### 9. Vélez-Málaga / Torre del Mar
+- **Driver**: **si** la cercanías C1-Este llega a esta altura (fase 2, posterior a Nerja-Rincón).
+- **Tesis**: revalorización binaria. Si ejecuta, +30–45 %; si no, +10 % orgánico.
+- Compras descuento por incertidumbre.
+
+#### 10. Estepona / Manilva (Costa del Sol occidental)
+- **Driver**: expansión del lujo desde Marbella hacia el oeste, nuevos golfs y puertos; demanda internacional estable.
+- **Tesis**: +25–35 % en 7 años en tramos medios.
+- **Riesgo**: fuera de tu perfil de cercanía a Málaga (> 1 h).
+
+### 15.4 Zonas que probablemente decepcionen (para no confundirse)
+
+| Zona | Razón |
+|---|---|
+| **Centro histórico Málaga** | Precio ya en 5.500–7.000 €/m²; regulación VUT restrictiva; saturación turística tope. |
+| **Carihuela / Bajondillo** | Moratoria VUT + edificios antiguos con derramas pesadas + desgaste turístico. |
+| **Fuengirola centro** | Crecimiento orgánico sano pero sin catalizador nuevo fuerte; ya descontado en precio. |
+| **Pedregalejo / Limonar** | Tramo alto; subida ya absorbida; suelo escaso frena el volumen, no la fiesta. |
+| **Marbella golden mile** | Muy caro; dependencia del ciclo de capital internacional. |
+
+### 15.5 Tabla-resumen: revalorización esperada vs riesgo
+
+| Zona | Horizonte | Revalorización esperada | Riesgo | Acierto |
+|---|---|---|---|---|
+| **Perchel-Lagunillas** | 5–7 a | +30–45 % | Medio | Alto |
+| **Campanillas / PTA** | 7–10 a | +35–50 % | Medio-alto | Alto |
+| **Cártama Estación** | 10 a | +40–60 % | Alto | Alto |
+| **Antequera** | 10 a | +40–70 % | Alto | Medio |
+| **Rincón de la Victoria** | 5–7 a | +25–35 % | Bajo | Alto |
+| **Teatinos** | 5 a | +20–30 % | Bajo | Alto |
+| **Playamar-Los Álamos** | 5–7 a | +20–30 % | Bajo-medio | **Alto (tu caso)** |
+| **Churriana** | 7 a | +25–35 % | Medio | Medio |
+| **Torre del Mar** | 7 a | +15–45 %* | Alto (binaria) | Medio |
+
+### 15.6 Principios que hay detrás de esta tabla
+
+1. **Sigue la infraestructura, no la moda**: metro, cercanías, hospitales y AVE imprimen revalorización previsible; lo "cool" sube rápido y puede desinflarse.
+2. **Compra 2–3 años antes de que el catalizador entre en servicio**: cuando inauguren, ya no hay descuento.
+3. **Empleo de alto valor > turismo**: el turismo infla el alquiler pero la regulación lo corta; el empleo tech infla la vivienda de forma estructural.
+4. **Oferta restringida > demanda fuerte**: barrios con suelo agotado (Teatinos, Soho) suben más que los que tienen PAU pendiente.
+5. **Diversifica el componente "uso"**: la mejor revalorización es la que disfrutas mientras ocurre. Por eso **tu compra en Playamar cumple doble objetivo**: vida + activo.
+
+### 15.7 Implicación práctica para tu decisión
+
+Si compras en **Playamar/Los Álamos** (tier 2 en revalorización pero tier 1 en "tesis mixta uso + capital"):
+- Vas a capturar **+20–30 %** en 5–7 años con riesgo bajo.
+- Adicionalmente "ganas" el valor de usar la vivienda cada día frente al escenario de comprar en una zona pura-inversión (Cártama, Antequera) donde no vivirías.
+- **El ROI ajustado por calidad de vida es el mayor** de todas las opciones.
+
+Si quisieras hacer **una apuesta puramente financiera** con un segundo activo más adelante (después de amortizar parte de esta hipoteca, p.ej. año 5), la jugada sería **comprar pequeño en Cártama Estación o Campanillas** como inversión-alquiler.
+
+---
+
+## 16. Recomendación final
 
 1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
 2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
