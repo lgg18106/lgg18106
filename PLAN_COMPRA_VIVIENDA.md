@@ -179,3 +179,123 @@ Los empleados públicos son uno de los colectivos con mejor perfil de riesgo par
 ---
 
 *Documento vivo: actualizar mensualmente los KPIs y trimestralmente la tabla de ofertas hipotecarias.*
+
+---
+
+## 9. Hipoteca máxima concedible (entidades más agresivas)
+
+### 9.1 Reglas que aplica la banca
+
+Tres filtros simultáneos — se adjudica **el más restrictivo**:
+
+1. **Ratio de esfuerzo**: cuota mensual ≤ **30–35 %** del neto (Kutxabank e Ibercaja estiran hasta **40 %** para funcionarios).
+2. **LTV (loan-to-value)**: % sobre el menor entre **precio de compra** y **tasación**.
+   - Kutxabank funcionarios: hasta **100 %** del menor de ambos.
+   - Ibercaja Vamos Funcionarios: hasta **100 %** con tasación ≥ precio.
+   - Unicaja: 80 % estándar, **90–95 %** negociable para empleado público.
+3. **Plazo máximo**: normalmente **30 años**, ampliable a **35–40** si al final de la vida del préstamo no superas los 70–75 años.
+
+### 9.2 Capacidad de pago por nivel salarial (funcionario universitario)
+
+Rangos típicos de un empleado público de universidad en España (14 pagas prorrateadas):
+
+| Perfil | Bruto anual | Neto mensual (12) | Cuota al 30 % | Cuota al 35 % | Cuota al 40 % (funcionario agresivo) |
+|---|---|---|---|---|---|
+| PAS C1 / Ayudante | 24.000 € | ~1.600 € | 480 € | 560 € | 640 € |
+| PAS A2 / Ayudante Dr. | 30.000 € | ~1.950 € | 585 € | 683 € | 780 € |
+| PAS A1 / Contratado Dr. | 38.000 € | ~2.400 € | 720 € | 840 € | 960 € |
+| Titular Universidad | 45.000 € | ~2.750 € | 825 € | 963 € | 1.100 € |
+| Catedrático | 55.000 € | ~3.250 € | 975 € | 1.138 € | 1.300 € |
+
+### 9.3 Capital máximo por cuota (fijo 2,45 % a 30 años — Kutxabank funcionarios)
+
+Factor: **1 € de cuota ≈ 255 € de capital** a 30 años y 2,45 % TIN.
+
+| Cuota disponible | Capital máx. a 30 años | Capital máx. a 35 años (~268 €/€) |
+|---|---|---|
+| 480 € | **122.000 €** | 128.600 € |
+| 585 € | **149.000 €** | 156.800 € |
+| 683 € | **174.000 €** | 183.000 € |
+| 720 € | **183.500 €** | 193.000 € |
+| 840 € | **214.000 €** | 225.100 € |
+| 960 € | **244.500 €** | 257.300 € |
+| 1.100 € | **280.300 €** | 294.800 € |
+
+> **Traducción práctica**: para financiar **240.000 €** sin aval, al 35 % de esfuerzo necesitas **neto ≥ 2.800 €/mes** (bruto ~46 k). Por debajo de eso la banca recorta el principal aunque la tasación lo permita.
+
+### 9.4 Máximos por entidad (supuesto: neto 2.000 €/mes, funcionario fijo, sin deudas)
+
+| Entidad | Tipo | LTV máx. | Esfuerzo máx. | Plazo máx. | **Principal máx. estimado** |
+|---|---|---|---|---|---|
+| **Kutxabank** | Fijo 2,30 % | 100 % | 40 % | 30 | **~200.000 €** |
+| **Ibercaja** | Fijo 2,35 % | 100 % | 40 % | 30 | **~198.000 €** |
+| **Unicaja** | Fijo 2,45 % | 90 % | 35 % | 30 | **~175.000 €** |
+| **Santander FF.PP.** | Fijo 2,55 % | 80 % | 35 % | 30 | **~170.000 €** |
+| **CaixaBank Colectivos** | Fijo 2,65 % | 80 % | 35 % | 30 | **~167.000 €** |
+
+> Con neto 2.000 € y sin aval, tu techo real ronda **200 k**. Faltarían **~45 k** para comprar a 245 k. Por eso el aval familiar cambia la ecuación.
+
+---
+
+## 10. Aval familiar: cómo mueve los números
+
+### 10.1 Modalidades
+
+| Modalidad | Qué aporta la familia | Efecto en el banco | Riesgo para avalista |
+|---|---|---|---|
+| **Aval solidario** (el más habitual) | Firma como garante; responde si tú dejas de pagar. | Sube la LTV aceptada (p. ej. del 80 % al 95–100 %). **No suma ingresos**. | Responde con **todo su patrimonio presente y futuro**. |
+| **Aval con garantía hipotecaria** | Pone su vivienda (libre de cargas) como segunda garantía. | Banco considera riesgo casi nulo → tipo más bajo + 100 % LTV. | Si impagas, la familia puede perder **su** vivienda. |
+| **Hipotecante no deudor** | Figura en la escritura como garante real, no en el préstamo. | Igual que el anterior, jurídicamente más limpio. | Idéntico al anterior. |
+| **Co-titular / co-prestatario** | Entra como segundo titular del préstamo. | **Suma sus ingresos** → el banco recalcula la cuota máxima. | Responde al 50 %; además afecta a su propia capacidad de endeudamiento futuro. |
+| **Donación en vida** (alternativa) | Aporta dinero efectivo (ej. 30 k). | Sustituye al aval: capital propio reforzado. | Impuesto de Donaciones Andalucía: **bonificado al 99 %** entre padres-hijos. |
+
+### 10.2 Impacto cuantitativo en tu caso
+
+Supuesto: tú cobras **2.000 €/mes**, padre/madre avalista con vivienda libre de cargas y pensión/nómina de **1.800 €/mes**.
+
+| Configuración | LTV posible | Plazo | Tipo estimado | Principal máx. | Vivienda objetivo alcanzable |
+|---|---|---|---|---|---|
+| **Sin aval** | 80 % | 30 a | 2,55 % | 200.000 € | hasta **~195 k** (faltan 50 k ahorro) |
+| **Aval solidario familiar** | 95 % | 30 a | 2,45 % | 228.000 € | hasta **~240 k** con 27 k ahorro |
+| **Aval con garantía hipotecaria** | 100 % | 30 a | 2,30 % | 240.000 € | hasta **~250 k**, solo impuestos con ahorro |
+| **Co-titular (ingresos sumados)** | 80 % | 30 a | 2,40 % | **~380.000 €** (se dispara la capacidad) | cualquier vivienda en rango; excedente va a amortización parcial |
+| **Donación 30 k + hipoteca 80 %** | 80 % | 30 a | 2,45 % | 200.000 € | **245 k** directa, sin avalista solidario |
+
+### 10.3 Combinación recomendada para tu perfil
+
+**Opción preferente**: **Aval con garantía hipotecaria** (si la familia puede y quiere) **+ hipoteca fija Kutxabank / Ibercaja al 100 %** a 30 años.
+
+- Principal: 245.000 €
+- Tipo fijo estimado: 2,30 %
+- Cuota: **~942 €/mes**
+- Necesitas ahorrar solo **~27.000 €** para impuestos + gastos + colchón → alcanzable en **12–14 meses** desde los 15 k actuales.
+
+**Opción "limpia"**: **Donación familiar de 25–30 k** (fiscalmente casi gratis en Andalucía) + hipoteca al 80 % sin avalista.
+
+- La familia no queda comprometida a largo plazo.
+- Tú firmas solo, con más libertad futura (divorcio, subrogación, ampliaciones).
+- Requiere que la familia tenga ese efectivo ahora.
+
+### 10.4 Cláusulas a negociar sí o sí con aval
+
+1. **Liberación del avalista** al amortizar el 20 % del capital (pacto escrito: "levantamiento de aval").
+2. **No dación en pago cruzada**: que el impago no ejecute primero la vivienda del avalista.
+3. **Aval limitado en cuantía y tiempo**: por ejemplo, aval solo sobre los primeros 50 k durante 10 años.
+4. **Revisión anual** del aval vinculada a LTV actual (cuando baje del 80 %, se libera automáticamente).
+
+### 10.5 Riesgos del aval (hablar en familia antes de firmar)
+
+- Responsabilidad **ilimitada** del avalista (art. 1.911 CC): responde con todo.
+- El aval **consume capacidad crediticia** del avalista: no podrá pedir hipoteca o préstamo personal grande mientras dure.
+- Aparece en **CIRBE** como riesgo indirecto.
+- En caso de fallecimiento del avalista, el aval **se transmite a los herederos** salvo pacto en contrario.
+
+---
+
+## 11. Recomendación final
+
+1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
+2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
+3. Si no hay efectivo familiar, **aval con garantía hipotecaria limitado y revisable** con Kutxabank o Ibercaja es la combinación con mejor relación capacidad/riesgo.
+4. Lleva **la misma oferta vinculante** a 3 bancos para negociar: con funcionario estable + aval, la horquilla de tipo fijo puede bajar 20–30 puntos básicos extra.
+
