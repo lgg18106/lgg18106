@@ -283,13 +283,18 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
             pass
 
     def _launch_browser(pw):
-        # Preferimos usar Chrome real instalado (más stealth que el Chromium
-        # de Playwright); si no existe, caemos a chromium por defecto.
+        # Usamos el Chromium interno de Playwright por defecto (no pide
+        # permisos de Automation en macOS). El canal 'chrome' solo si el
+        # usuario lo fuerza con PISO_FINDER_USE_CHROME=1.
+        import os as _os
         common_args = [
             "--disable-blink-features=AutomationControlled",
             "--disable-features=IsolateOrigins,site-per-process",
         ]
-        for channel in ("chrome", None):
+        channels_to_try = [None]
+        if _os.getenv("PISO_FINDER_USE_CHROME") == "1":
+            channels_to_try = ["chrome", None]
+        for channel in channels_to_try:
             try:
                 return pw.chromium.launch(
                     headless=headless,
