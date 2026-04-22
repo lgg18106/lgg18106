@@ -108,6 +108,38 @@ def _days_on_market(html: str) -> Optional[int]:
     return None
 
 
+def _fetch_via_scrapingbee(url: str, timeout: int = 60) -> Optional[str]:
+    """ScrapingBee (free tier 1000 req/mes) con IPs residenciales rotativas
+    y render JS. Pasa DataDome en la mayoría de los casos.
+
+    Requiere variable de entorno SCRAPINGBEE_KEY.
+    Registro gratuito: https://app.scrapingbee.com/account/register
+    """
+    import os
+    import requests
+    key = os.getenv("SCRAPINGBEE_KEY")
+    if not key:
+        return None
+    try:
+        r = requests.get(
+            "https://app.scrapingbee.com/api/v1/",
+            params={
+                "api_key": key,
+                "url": url,
+                "render_js": "true",
+                "premium_proxy": "true",
+                "country_code": "es",
+                "wait": "3000",
+            },
+            timeout=timeout,
+        )
+        if r.status_code == 200 and len(r.text) > 2000:
+            return r.text
+    except Exception:
+        return None
+    return None
+
+
 def _fetch_via_jina_reader(url: str, timeout: int = 45) -> Optional[str]:
     """r.jina.ai convierte cualquier URL a markdown, saltándose Cloudflare
     desde sus propios servidores. Gratis y sin API key. Devuelve markdown o None."""
@@ -194,11 +226,29 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
         pip install playwright playwright-stealth
         playwright install chromium
     """
-    # Plan A: intento vía r.jina.ai — sin dependencias, sin captcha.
+    # Plan A: ScrapingBee (si hay API key) — IPs residenciales, pasa DataDome.
+    html_from_sb = None
+    try:
+        html_from_sb = _fetch_via_scrapingbee(url)
+        if html_from_sb:
+            if dump_html:
+                try:
+                    with open(dump_html, "w", encoding="utf-8") as f:
+                        f.write(html_from_sb)
+                except Exception:
+                    pass
+            prop = _parse_html(url, html_from_sb)
+            if prop.price and prop.municipio:
+                return prop
+    except Exception:
+        pass
+
+    # Plan B: r.jina.ai (gratis, pero los servers de jina también pueden
+    # recibir la página de bloqueo DataDome).
     try:
         md = _fetch_via_jina_reader(url)
         if md:
-            if dump_html:
+            if dump_html and not html_from_sb:
                 try:
                     with open(dump_html, "w", encoding="utf-8") as f:
                         f.write(md)

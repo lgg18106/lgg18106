@@ -44,6 +44,8 @@ jobs:
       - name: Process queue (push trigger)
         if: github.event_name == 'push'
         working-directory: piso_finder
+        env:
+          SCRAPINGBEE_KEY: ${{ secrets.SCRAPINGBEE_KEY }}
         run: |
           mkdir -p data/analysis
           for f in data/queue/*.url; do
@@ -62,6 +64,8 @@ jobs:
       - name: Process dispatch input
         if: github.event_name == 'workflow_dispatch'
         working-directory: piso_finder
+        env:
+          SCRAPINGBEE_KEY: ${{ secrets.SCRAPINGBEE_KEY }}
         run: |
           mkdir -p data/analysis
           stem="dispatch-$(date +%s)"
