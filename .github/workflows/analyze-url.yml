@@ -38,6 +38,7 @@ jobs:
         working-directory: piso_finder
         run: |
           pip install -r requirements.txt
+          pip install playwright-stealth
           python -m playwright install --with-deps chromium
 
       - name: Process queue (push trigger)
@@ -52,7 +53,8 @@ jobs:
             echo "::group::Fetching $url"
             PYTHONPATH=src python -m piso_finder.url_cli "$url" \
               --benchmarks data/benchmarks.yaml \
-              --json-out "data/analysis/${stem}.json" || true
+              --json-out "data/analysis/${stem}.json" \
+              2>&1 | tee "data/analysis/${stem}.log"
             echo "::endgroup::"
             rm -f "$f"
           done
@@ -73,7 +75,8 @@ jobs:
           PYTHONPATH=src python -m piso_finder.url_cli "${{ inputs.url }}" \
             --benchmarks data/benchmarks.yaml \
             $extra_args \
-            --json-out "data/analysis/${stem}.json" || true
+            --json-out "data/analysis/${stem}.json" \
+            2>&1 | tee "data/analysis/${stem}.log"
 
       - name: Commit results
         run: |

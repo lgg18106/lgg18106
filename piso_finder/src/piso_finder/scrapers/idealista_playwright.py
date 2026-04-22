@@ -108,11 +108,15 @@ def _days_on_market(html: str) -> Optional[int]:
     return None
 
 
-def fetch_property(url: str, headless: bool = True, timeout_ms: int = 45000) -> Property:
+def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dump_html: str | None = None) -> Property:
     """Descarga la página con Playwright y devuelve un Property normalizado.
 
+    Aplica playwright-stealth si está instalado (mejor tasa de éxito con
+    Cloudflare / DataDome). Si dump_html es una ruta, guarda el HTML final
+    ahí para depuración.
+
     Requiere haber ejecutado previamente:
-        pip install playwright
+        pip install playwright playwright-stealth
         playwright install chromium
     """
     try:
@@ -120,14 +124,22 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 45000) -> 
     except ImportError as e:
         raise RuntimeError(
             "Playwright no está instalado. Ejecuta:\n"
-            "  pip install playwright\n"
+            "  pip install playwright playwright-stealth\n"
             "  playwright install chromium"
         ) from e
+
+    try:
+        from playwright_stealth import stealth_sync  # type: ignore
+    except ImportError:
+        stealth_sync = None
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=headless,
-            args=["--disable-blink-features=AutomationControlled"],
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--disable-features=IsolateOrigins,site-per-process",
+            ],
         )
         context = browser.new_context(
             user_agent=(
@@ -140,7 +152,24 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 45000) -> 
             viewport={"width": 1366, "height": 820},
         )
         page = context.new_page()
-        page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+        if stealth_sync is not None:
+            try:
+                stealth_sync(page)
+            except Exception:
+                pass
+
+        response = page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+        status = response.status if response else None
+        if status and status >= 400:
+            html = page.content()
+            if dump_html:
+                try:
+                    with open(dump_html, "w", encoding="utf-8") as f:
+                        f.write(html)
+                except Exception:
+                    pass
+            browser.close()
+            raise RuntimeError(f"HTTP {status} al cargar {url} (posible antibot).")
 
         # Banner de cookies Idealista (Didomi)
         for sel in [
@@ -154,8 +183,32 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 45000) -> 
             except Exception:
                 continue
 
-        page.wait_for_timeout(1500)
+        page.wait_for_timeout(2500)
+
+        # Detección básica de captcha / página de bloqueo
+        html_lower = page.content().lower()
+        if any(k in html_lower for k in [
+            "cloudflare", "captcha", "verificamos que es usted una persona",
+            "access denied", "just a moment", "request unsuccessful",
+        ]) and "application/ld+json" not in html_lower:
+            if dump_html:
+                try:
+                    with open(dump_html, "w", encoding="utf-8") as f:
+                        f.write(page.content())
+                except Exception:
+                    pass
+            browser.close()
+            raise RuntimeError(
+                f"Página de bloqueo/captcha detectada en {url}. Prueba --show-browser."
+            )
+
         html = page.content()
+        if dump_html:
+            try:
+                with open(dump_html, "w", encoding="utf-8") as f:
+                    f.write(html)
+            except Exception:
+                pass
         browser.close()
 
     return _parse_html(url, html)

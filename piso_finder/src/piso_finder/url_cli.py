@@ -30,14 +30,27 @@ def main(argv: list[str] | None = None) -> int:
     args = p.parse_args(argv)
 
     console.print(f"[cyan]→ fetching[/cyan] {args.url}")
+    dump = None
+    if args.json_out:
+        dump = args.json_out.replace(".json", ".html")
     try:
-        prop: Property = fetch_property(args.url, headless=not args.show_browser)
+        prop: Property = fetch_property(
+            args.url,
+            headless=not args.show_browser,
+            dump_html=dump,
+        )
     except Exception as e:
-        console.print(f"[red]fetch falló: {e}[/red]")
+        msg = f"fetch falló: {e}"
+        console.print(f"[red]{msg}[/red]")
         console.print(
             "[yellow]Si Idealista bloquea, prueba --show-browser la primera vez para "
             "pasar el captcha, o pega los datos a mano en un JSON y usa piso_finder-analyze.[/yellow]"
         )
+        if args.json_out:
+            Path(args.json_out).write_text(
+                json.dumps({"error": msg, "url": args.url}, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
         return 2
 
     if not prop.price:
