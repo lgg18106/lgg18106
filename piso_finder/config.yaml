@@ -49,6 +49,10 @@ zones:
     - {nombre: "Carihuela", municipio: "Torremolinos", barrio: "Carihuela"}
 
 scrapers:
+  local_file:
+    enabled: true
+    paths:
+      - data/sample_listings.json
   idealista:
     enabled: true
     delay_seconds: 12

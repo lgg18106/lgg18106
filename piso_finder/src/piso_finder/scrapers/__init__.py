@@ -5,6 +5,7 @@ from .idealista import IdealistaScraper
 from .fotocasa import FotocasaScraper
 from .pisos_com import PisosComScraper
 from .habitaclia import HabitacliaScraper
+from .local_file import LocalFileScraper
 
 
 SCRAPERS: dict[str, type[BaseScraper]] = {
@@ -12,6 +13,7 @@ SCRAPERS: dict[str, type[BaseScraper]] = {
     "fotocasa": FotocasaScraper,
     "pisos_com": PisosComScraper,
     "habitaclia": HabitacliaScraper,
+    "local_file": LocalFileScraper,
 }
 
 

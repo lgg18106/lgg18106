@@ -13,6 +13,7 @@ from rich.table import Table
 
 from .filters import filter_all
 from .models import Property
+from .report import render_html
 from .scorer import apply_scores
 from .scrapers import build_scraper
 
@@ -171,6 +172,11 @@ def main(argv: list[str] | None = None) -> int:
             json.dump([p.to_dict() for p in kept], f, ensure_ascii=False, indent=2)
 
     _print_top(kept, n=15)
+
+    html_path = cfg.get("output", {}).get("top_n_html")
+    if html_path and kept:
+        render_html(kept, top_n=20, out_path=html_path)
+        console.print(f"HTML: [bold]{html_path}[/bold]")
 
     drop_path = Path(out_csv).with_suffix(".descartados.csv")
     if dropped:
