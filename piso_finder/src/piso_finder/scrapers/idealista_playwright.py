@@ -108,6 +108,81 @@ def _days_on_market(html: str) -> Optional[int]:
     return None
 
 
+def _fetch_via_jina_reader(url: str, timeout: int = 45) -> Optional[str]:
+    """r.jina.ai convierte cualquier URL a markdown, saltándose Cloudflare
+    desde sus propios servidores. Gratis y sin API key. Devuelve markdown o None."""
+    import requests
+    try:
+        r = requests.get(
+            f"https://r.jina.ai/{url}",
+            headers={"Accept": "text/markdown", "X-With-Generated-Alt": "true"},
+            timeout=timeout,
+        )
+        if r.status_code == 200 and len(r.text) > 500:
+            return r.text
+    except Exception:
+        return None
+    return None
+
+
+def _parse_markdown(url: str, md: str) -> Property:
+    """Extrae campos desde el markdown devuelto por r.jina.ai."""
+    text = md
+    title_m = re.search(r"^#\s*(.+)$", md, re.MULTILINE)
+    title = title_m.group(1).strip() if title_m else ""
+
+    # Precio: primer "123.456 €" razonable
+    price = None
+    for m in re.finditer(r"(\d[\d\.\s]{4,})\s*€", md):
+        val = parse_int_euro(m.group(1))
+        if val and 20000 <= val <= 5_000_000:
+            price = val
+            break
+
+    area = parse_area_m2(md)
+    rooms = parse_rooms(md)
+
+    # Municipio/barrio: buscar patrones tipo "Playamar, Torremolinos"
+    municipio = ""
+    barrio = None
+    loc = re.search(
+        r"\b(Playamar|Los Álamos|El Pinar|Las Lagunas|La Cala(?:\s+de\s+Mijas)?|Los Boliches|Torreblanca|Carvajal|Cotomar|Añoreta|Arroyo de la Miel|Benalmádena Costa|Carihuela|Torre del Mar|Mijas Golf|Mijas Pueblo|Playamar-El Pinillo)[^,\n]*,\s*([A-ZÁÉÍÓÚÑ][\wáéíóúñ\-\s]+)",
+        md,
+    )
+    if loc:
+        barrio = loc.group(1).strip()
+        municipio = loc.group(2).strip()
+    else:
+        # fallback por palabra clave
+        for mun in ["Torremolinos", "Mijas", "Fuengirola", "Benalmádena", "Rincón de la Victoria", "Málaga", "Vélez-Málaga"]:
+            if mun in md:
+                municipio = mun
+                break
+
+    description = md[:2000]
+
+    return Property(
+        source="jina_reader",
+        url=url,
+        title=title[:200] if title else "",
+        price=price or 0.0,
+        municipio=municipio,
+        barrio=barrio,
+        rooms=rooms,
+        area_m2=area,
+        has_garage=has_keyword(md, "garaje", "plaza de garaje", "parking"),
+        has_pool=has_keyword(md, "piscina"),
+        has_elevator=has_keyword(md, "ascensor"),
+        has_terrace=has_keyword(md, "terraza", "balcón", "balcon"),
+        is_exterior=has_keyword(md, "exterior"),
+        is_new_build=has_keyword(md, "obra nueva", "a estrenar", "promoción"),
+        energy_cert=detect_energy_cert(md),
+        state_flags=detect_state_flags(md),
+        description=description,
+        raw={"fallback": "jina_reader"},
+    )
+
+
 def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dump_html: str | None = None) -> Property:
     """Descarga la página con Playwright y devuelve un Property normalizado.
 
@@ -119,13 +194,29 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
         pip install playwright playwright-stealth
         playwright install chromium
     """
+    # Plan A: intento vía r.jina.ai — sin dependencias, sin captcha.
+    try:
+        md = _fetch_via_jina_reader(url)
+        if md:
+            if dump_html:
+                try:
+                    with open(dump_html, "w", encoding="utf-8") as f:
+                        f.write(md)
+                except Exception:
+                    pass
+            prop = _parse_markdown(url, md)
+            if prop.price and prop.municipio:
+                return prop
+    except Exception:
+        pass
+
+    # Plan B: Playwright (solo si lo anterior no dio precio/ubicación).
     try:
         from playwright.sync_api import sync_playwright
     except ImportError as e:
         raise RuntimeError(
-            "Playwright no está instalado. Ejecuta:\n"
-            "  pip install playwright playwright-stealth\n"
-            "  playwright install chromium"
+            "Ni r.jina.ai ni Playwright pudieron obtener datos. "
+            "Instala Playwright: pip install playwright playwright-stealth && playwright install chromium"
         ) from e
 
     try:
