@@ -40,7 +40,32 @@ Opciones:
 - `--max-per-source` máximo de anuncios por fuente.
 - `--dry-run` no hace red, usa fixtures de prueba (útil para depurar filtros).
 
-## Qué hace
+## Dos herramientas
+
+### `piso_finder` — buscar y filtrar listados
+
+### `piso_finder-analyze` — valorar un anuncio concreto
+
+Analiza **un anuncio** contra benchmarks reales de la zona (Tinsa IMIE,
+Notariado, Idealista) y el Valor de Referencia del Catastro. Calcula oferta
+recomendada, tasación bancaria estimada, ITP, gastos e hipoteca con el
+Programa Garantía Vivienda Andalucía. Cierra con un veredicto verde/amarillo/rojo.
+
+```bash
+# Anuncio en JSON (puedes copiar los campos desde el portal)
+python -m piso_finder.analyze_cli data/sample_property.json \
+    --benchmarks data/benchmarks.yaml \
+    --valor-referencia 220000 \
+    --days-on-market 120
+```
+
+Opciones:
+- `--valor-referencia` el VRC del inmueble. Lo obtienes en https://www1.sedecatastro.gob.es con la referencia catastral. Sin esto, el análisis ignora la base fiscal mínima.
+- `--days-on-market` días que lleva publicado (lo ves en el anuncio o por histórico).
+- `--context` JSON con flags especiales: `{"particular_sin_agencia": true, "herencia_multiples_herederos": true, "anuncio_con_bajada_visible": true}`.
+- `--json-out` exportar análisis completo a JSON.
+
+## Qué hace piso_finder
 
 1. Lanza los scrapers listados en el config contra las zonas definidas.
 2. Normaliza cada anuncio a un `Property` común (precio, m², habitaciones, extras).

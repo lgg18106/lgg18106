@@ -1,0 +1,185 @@
+# Benchmarks de mercado Málaga / Costa del Sol — abril 2026
+#
+# Fuentes que conviene volver a consultar cada trimestre:
+#   - Tinsa IMIE:         https://www.tinsa.es/indice-imie/
+#   - Notariado:          https://www.notariado.org/portal/estadisticas
+#   - Catastro:           https://www.sedecatastro.gob.es (valor de referencia por inmueble)
+#   - Idealista evolución: https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/
+#   - INE IPV:            https://www.ine.es/
+#
+# Cada entrada tiene:
+#   tinsa_eur_m2            €/m² tasación de operaciones reales (más conservador)
+#   notariado_eur_m2        €/m² medio de operaciones notarizadas (real closed price)
+#   idealista_eur_m2        €/m² medio de anuncios publicados (precio de oferta)
+#   price_change_12m        variación anual (%, decimal)
+#   avg_days_on_market      días medios que un anuncio tarda en cerrar
+#   commission_embedded     % comisión inmobiliaria típica ya incluida en el anuncio
+#
+# Regla de uso: el precio de cierre real en España suele moverse entre el Notariado
+# (piso) y el Idealista (techo). Si un anuncio está por encima del techo Idealista
+# de zona, asume 10-15 % de margen para negociar.
+
+zones:
+
+  "Torremolinos/Playamar":
+    tinsa_eur_m2: 3400
+    notariado_eur_m2: 3100
+    idealista_eur_m2: 3800
+    price_change_12m: 0.14
+    avg_days_on_market: 95
+    commission_embedded: 0.04
+
+  "Torremolinos/Los Álamos":
+    tinsa_eur_m2: 3100
+    notariado_eur_m2: 2850
+    idealista_eur_m2: 3500
+    price_change_12m: 0.13
+    avg_days_on_market: 90
+    commission_embedded: 0.04
+
+  "Torremolinos/El Pinar":
+    tinsa_eur_m2: 2700
+    notariado_eur_m2: 2500
+    idealista_eur_m2: 3000
+    price_change_12m: 0.11
+    avg_days_on_market: 110
+    commission_embedded: 0.04
+
+  "Torremolinos/Carihuela":
+    tinsa_eur_m2: 4300
+    notariado_eur_m2: 4000
+    idealista_eur_m2: 4800
+    price_change_12m: 0.10
+    avg_days_on_market: 75
+    commission_embedded: 0.04
+
+  "Mijas/Las Lagunas":
+    tinsa_eur_m2: 2900
+    notariado_eur_m2: 2700
+    idealista_eur_m2: 3200
+    price_change_12m: 0.12
+    avg_days_on_market: 100
+    commission_embedded: 0.04
+
+  "Mijas/La Cala de Mijas":
+    tinsa_eur_m2: 3100
+    notariado_eur_m2: 2900
+    idealista_eur_m2: 3400
+    price_change_12m: 0.12
+    avg_days_on_market: 95
+    commission_embedded: 0.04
+
+  "Mijas/Mijas Golf":
+    tinsa_eur_m2: 2400
+    notariado_eur_m2: 2200
+    idealista_eur_m2: 2800
+    price_change_12m: 0.07
+    avg_days_on_market: 160
+    commission_embedded: 0.05
+
+  "Mijas/Mijas Pueblo":
+    tinsa_eur_m2: 2700
+    notariado_eur_m2: 2500
+    idealista_eur_m2: 3000
+    price_change_12m: 0.08
+    avg_days_on_market: 140
+    commission_embedded: 0.04
+
+  "Fuengirola/Los Boliches":
+    tinsa_eur_m2: 3600
+    notariado_eur_m2: 3400
+    idealista_eur_m2: 3900
+    price_change_12m: 0.11
+    avg_days_on_market: 85
+    commission_embedded: 0.04
+
+  "Fuengirola/Torreblanca":
+    tinsa_eur_m2: 3700
+    notariado_eur_m2: 3400
+    idealista_eur_m2: 4000
+    price_change_12m: 0.13
+    avg_days_on_market: 80
+    commission_embedded: 0.04
+
+  "Fuengirola/Carvajal":
+    tinsa_eur_m2: 3900
+    notariado_eur_m2: 3600
+    idealista_eur_m2: 4200
+    price_change_12m: 0.12
+    avg_days_on_market: 80
+    commission_embedded: 0.04
+
+  "Rincón de la Victoria/Cotomar":
+    tinsa_eur_m2: 3100
+    notariado_eur_m2: 2900
+    idealista_eur_m2: 3300
+    price_change_12m: 0.18
+    avg_days_on_market: 80
+    commission_embedded: 0.04
+
+  "Rincón de la Victoria/Añoreta":
+    tinsa_eur_m2: 3200
+    notariado_eur_m2: 3000
+    idealista_eur_m2: 3400
+    price_change_12m: 0.18
+    avg_days_on_market: 75
+    commission_embedded: 0.04
+
+  "Benalmádena/Arroyo de la Miel":
+    tinsa_eur_m2: 3200
+    notariado_eur_m2: 3000
+    idealista_eur_m2: 3500
+    price_change_12m: 0.14
+    avg_days_on_market: 90
+    commission_embedded: 0.04
+
+  "Benalmádena/Costa":
+    tinsa_eur_m2: 3400
+    notariado_eur_m2: 3100
+    idealista_eur_m2: 3700
+    price_change_12m: 0.14
+    avg_days_on_market: 85
+    commission_embedded: 0.04
+
+  "Vélez-Málaga/Torre del Mar":
+    tinsa_eur_m2: 2400
+    notariado_eur_m2: 2200
+    idealista_eur_m2: 2700
+    price_change_12m: 0.13
+    avg_days_on_market: 120
+    commission_embedded: 0.04
+
+# Default si la zona no está en la tabla
+default:
+  tinsa_eur_m2: 2800
+  notariado_eur_m2: 2600
+  idealista_eur_m2: 3100
+  price_change_12m: 0.10
+  avg_days_on_market: 110
+  commission_embedded: 0.04
+
+# Parámetros por defecto para cálculo de hipoteca y gastos (Andalucía)
+defaults:
+  itp_rate: 0.07
+  iva_rate_obra_nueva: 0.10
+  ajd_rate_obra_nueva: 0.012
+  notaria_registro_gestoria: 2500
+  tasacion: 400
+  mortgage:
+    tin_fijo: 0.025
+    plazo_anios: 30
+    neto_mensual: 2450           # editable — neto real del solicitante
+    cuota_max_pct: 0.35          # tope de esfuerzo
+    usa_aval_junta: true         # Programa Garantía Vivienda Andalucía
+
+# Descuentos esperables sobre precio de anuncio (multiplicador)
+discount_rules:
+  obra_nueva: 0.02                # promotoras bajan poco
+  segunda_mano_menos_30_dias: 0.04
+  segunda_mano_30_90_dias: 0.06
+  segunda_mano_90_180_dias: 0.09
+  segunda_mano_mas_180_dias: 0.12
+  anuncio_con_bajada_visible: 0.05  # extra sobre lo ya rebajado
+  herencia_multiples_herederos: 0.12
+  particular_sin_agencia: 0.12
+  agencia_exclusiva_grande: 0.06

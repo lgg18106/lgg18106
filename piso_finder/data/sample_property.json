@@ -1,0 +1,20 @@
+{
+  "source": "fotocasa_sample",
+  "url": "https://www.fotocasa.es/inmueble/sample-003/",
+  "title": "Ático Playamar 2ª línea reformado integral",
+  "price": 238000,
+  "municipio": "Torremolinos",
+  "barrio": "Playamar",
+  "rooms": 2,
+  "bathrooms": 2,
+  "area_m2": 85,
+  "has_garage": true,
+  "has_pool": true,
+  "has_elevator": true,
+  "has_terrace": true,
+  "is_exterior": true,
+  "orientation": "sur",
+  "is_new_build": false,
+  "energy_cert": "C",
+  "description": "Reformado integralmente en 2023, terraza 12m2, piscina comunitaria y plaza de garaje."
+}

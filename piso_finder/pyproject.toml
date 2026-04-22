@@ -20,6 +20,7 @@ dependencies = [
 
 [project.scripts]
 piso_finder = "piso_finder.cli:main"
+piso_finder-analyze = "piso_finder.analyze_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
