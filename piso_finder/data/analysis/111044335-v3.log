@@ -1,0 +1,5 @@
+→ fetching https://www.idealista.com/inmueble/111044335/
+fetch falló: HTTP 403 al cargar https://www.idealista.com/inmueble/111044335/ 
+(posible antibot).
+Si Idealista bloquea, prueba --show-browser la primera vez para pasar el 
+captcha, o pega los datos a mano en un JSON y usa piso_finder-analyze.
