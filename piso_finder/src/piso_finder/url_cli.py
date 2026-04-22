@@ -26,6 +26,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--context", default=None)
     p.add_argument("--show-browser", action="store_true",
                    help="Lanza navegador visible (útil si Idealista pide captcha)")
+    p.add_argument("--state-file", default=None,
+                   help="Ruta al storage_state (por defecto ~/.piso_finder/idealista_state.json)")
     p.add_argument("--json-out", default=None)
     args = p.parse_args(argv)
 
@@ -38,6 +40,7 @@ def main(argv: list[str] | None = None) -> int:
             args.url,
             headless=not args.show_browser,
             dump_html=dump,
+            state_file=args.state_file,
         )
     except Exception as e:
         msg = f"fetch falló: {e}"

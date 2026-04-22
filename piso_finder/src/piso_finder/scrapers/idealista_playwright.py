@@ -215,7 +215,20 @@ def _parse_markdown(url: str, md: str) -> Property:
     )
 
 
-def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dump_html: str | None = None) -> Property:
+def _default_state_path() -> str:
+    import os
+    d = os.path.expanduser("~/.piso_finder")
+    os.makedirs(d, exist_ok=True)
+    return os.path.join(d, "idealista_state.json")
+
+
+def fetch_property(
+    url: str,
+    headless: bool = True,
+    timeout_ms: int = 60000,
+    dump_html: str | None = None,
+    state_file: str | None = None,
+) -> Property:
     """Descarga la página con Playwright y devuelve un Property normalizado.
 
     Aplica playwright-stealth si está instalado (mejor tasa de éxito con
@@ -305,9 +318,13 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
                 continue
         return pw.chromium.launch(headless=headless, args=common_args)
 
+    import os as _os
+    resolved_state = state_file or _default_state_path()
+    state_exists = _os.path.exists(resolved_state) and _os.path.getsize(resolved_state) > 0
+
     def _run(pw):
         browser = _launch_browser(pw)
-        context = browser.new_context(
+        context_kwargs = dict(
             user_agent=(
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -323,6 +340,9 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
                 "Sec-Ch-Ua-Platform": '"macOS"',
             },
         )
+        if state_exists:
+            context_kwargs["storage_state"] = resolved_state
+        context = browser.new_context(**context_kwargs)
         page = context.new_page()
         if stealth_sync_legacy is not None:
             try:
@@ -373,12 +393,44 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
                 "verificamos que es usted una persona",
             )
         ):
-            browser.close()
-            raise RuntimeError(
-                "Bloqueo antibot detectado. Prueba --show-browser y pasa el "
-                "captcha a mano una vez."
-            )
+            # Si estamos en headful, damos tiempo a que el usuario resuelva
+            # el captcha manualmente y detectamos cuándo desaparece.
+            if not headless:
+                print(
+                    "   Detectado captcha/bloqueo. Resuélvelo en la ventana "
+                    "de Chromium. Esperando hasta 3 minutos..."
+                )
+                try:
+                    page.wait_for_function(
+                        "document.querySelector('script[type=\"application/ld+json\"]') !== null",
+                        timeout=180000,
+                    )
+                    html = page.content()
+                except Exception:
+                    try:
+                        context.storage_state(path=resolved_state)
+                    except Exception:
+                        pass
+                    browser.close()
+                    raise RuntimeError(
+                        "El captcha no se resolvió a tiempo. Relanza e intenta otra vez."
+                    )
+            else:
+                try:
+                    context.storage_state(path=resolved_state)
+                except Exception:
+                    pass
+                browser.close()
+                raise RuntimeError(
+                    "Bloqueo antibot detectado. Relanza con --show-browser "
+                    "y pasa el captcha a mano una vez (se guardará la sesión)."
+                )
 
+        # Guardar la sesión para que la próxima ejecución no necesite captcha.
+        try:
+            context.storage_state(path=resolved_state)
+        except Exception:
+            pass
         browser.close()
         return html
 
