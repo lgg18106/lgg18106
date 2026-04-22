@@ -19,7 +19,8 @@ console = Console()
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="URL Idealista → análisis completo")
-    p.add_argument("url", help="URL del anuncio (ej: https://www.idealista.com/inmueble/111044335/)")
+    p.add_argument("url", nargs="?", default=None,
+                   help="URL del anuncio (omitir si se usa --html-file)")
     p.add_argument("--benchmarks", default="data/benchmarks.yaml")
     p.add_argument("--valor-referencia", type=float, default=None)
     p.add_argument("--days-on-market", type=int, default=None)
@@ -28,33 +29,54 @@ def main(argv: list[str] | None = None) -> int:
                    help="Lanza navegador visible (útil si Idealista pide captcha)")
     p.add_argument("--state-file", default=None,
                    help="Ruta al storage_state (por defecto ~/.piso_finder/idealista_state.json)")
+    p.add_argument("--html-file", default=None,
+                   help="Ruta a un .html guardado del anuncio (omite el fetch y analiza directamente)")
     p.add_argument("--json-out", default=None)
     args = p.parse_args(argv)
+    if not args.url and not args.html_file:
+        p.error("debes indicar una URL o --html-file")
 
-    console.print(f"[cyan]→ fetching[/cyan] {args.url}")
-    dump = None
-    if args.json_out:
-        dump = args.json_out.replace(".json", ".html")
-    try:
-        prop: Property = fetch_property(
-            args.url,
-            headless=not args.show_browser,
-            dump_html=dump,
-            state_file=args.state_file,
-        )
-    except Exception as e:
-        msg = f"fetch falló: {e}"
-        console.print(f"[red]{msg}[/red]")
-        console.print(
-            "[yellow]Si Idealista bloquea, prueba --show-browser la primera vez para "
-            "pasar el captcha, o pega los datos a mano en un JSON y usa piso_finder-analyze.[/yellow]"
-        )
-        if args.json_out:
-            Path(args.json_out).write_text(
-                json.dumps({"error": msg, "url": args.url}, ensure_ascii=False, indent=2),
-                encoding="utf-8",
+    if args.html_file:
+        from .scrapers.idealista_playwright import _parse_html
+        html_path = Path(args.html_file)
+        console.print(f"[cyan]→ analizando HTML local[/cyan] {html_path}")
+        html = html_path.read_text(encoding="utf-8", errors="replace")
+        url_for_analysis = args.url or f"file://{html_path.resolve()}"
+        prop = _parse_html(url_for_analysis, html)
+        if not prop.price:
+            console.print(
+                "[red]No se pudo extraer precio del HTML. "
+                "Asegúrate de que guardaste la página completa (⌘+S → Web archive, "
+                "o ⌘+U → ⌘+A → ⌘+C → pega a un .html).[/red]"
             )
-        return 2
+            return 3
+    else:
+        console.print(f"[cyan]→ fetching[/cyan] {args.url}")
+        dump = None
+        if args.json_out:
+            dump = args.json_out.replace(".json", ".html")
+        try:
+            prop: Property = fetch_property(
+                args.url,
+                headless=not args.show_browser,
+                dump_html=dump,
+                state_file=args.state_file,
+            )
+        except Exception as e:
+            msg = f"fetch falló: {e}"
+            console.print(f"[red]{msg}[/red]")
+            console.print(
+                "[yellow]Opciones:\n"
+                "  · conecta a otra IP (ej. hotspot móvil)\n"
+                "  · configura SCRAPINGBEE_KEY y vuelve a lanzar\n"
+                "  · guarda la página desde tu navegador y usa --html-file foto.html[/yellow]"
+            )
+            if args.json_out:
+                Path(args.json_out).write_text(
+                    json.dumps({"error": msg, "url": args.url}, ensure_ascii=False, indent=2),
+                    encoding="utf-8",
+                )
+            return 2
 
     if not prop.price:
         console.print("[red]No se pudo extraer el precio. Revisa la URL o usa --show-browser.[/red]")
