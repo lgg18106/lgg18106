@@ -1,0 +1,84 @@
+# Criterios de búsqueda — perfil Gonzalo, abril 2026
+# Editable libremente; el programa lo relee cada ejecución.
+
+criteria:
+  price_min: 200000
+  price_max: 250000
+  rooms_min: 2
+  area_min_m2: 70
+  must_have:
+    - garaje
+    - piscina
+    - ascensor
+  prefer:
+    - obra_nueva
+    - certificacion_energetica_a_b
+    - terraza
+    - exterior
+    - orientacion_sur
+  exclude_states:
+    - ocupado
+    - alquilado
+    - con_inquilino
+    - subasta
+    - adjudicacion
+    - nuda_propiedad
+    - alquiler_con_opcion
+    - vut_en_conflicto
+
+# Zonas por prioridad (1 = mejor score, 3 = descartada)
+zones:
+  priority_1:
+    - {nombre: "Torremolinos - Playamar", municipio: "Torremolinos", barrio: "Playamar"}
+    - {nombre: "Torremolinos - Los Álamos", municipio: "Torremolinos", barrio: "Los Álamos"}
+    - {nombre: "Torremolinos - El Pinar", municipio: "Torremolinos", barrio: "El Pinar"}
+    - {nombre: "Mijas Costa - Las Lagunas", municipio: "Mijas", barrio: "Las Lagunas"}
+    - {nombre: "Mijas Costa - La Cala", municipio: "Mijas", barrio: "La Cala de Mijas"}
+  priority_2:
+    - {nombre: "Fuengirola - Torreblanca", municipio: "Fuengirola", barrio: "Torreblanca"}
+    - {nombre: "Fuengirola - Los Boliches", municipio: "Fuengirola", barrio: "Los Boliches"}
+    - {nombre: "Fuengirola - Carvajal", municipio: "Fuengirola", barrio: "Carvajal"}
+    - {nombre: "Rincón de la Victoria - Cotomar", municipio: "Rincón de la Victoria", barrio: "Cotomar"}
+    - {nombre: "Rincón de la Victoria - Añoreta", municipio: "Rincón de la Victoria", barrio: "Añoreta"}
+    - {nombre: "Benalmádena - Arroyo de la Miel", municipio: "Benalmádena", barrio: "Arroyo de la Miel"}
+    - {nombre: "Benalmádena Costa", municipio: "Benalmádena", barrio: "Costa"}
+  excluded:
+    - {nombre: "Mijas Golf", municipio: "Mijas", barrio: "Mijas Golf"}
+    - {nombre: "Mijas Pueblo", municipio: "Mijas", barrio: "Mijas Pueblo"}
+    - {nombre: "Torre del Mar", municipio: "Vélez-Málaga", barrio: "Torre del Mar"}
+    - {nombre: "Carihuela", municipio: "Torremolinos", barrio: "Carihuela"}
+
+scrapers:
+  idealista:
+    enabled: true
+    delay_seconds: 12
+    max_pages: 4
+    use_official_api: false  # true si tienes credenciales en .env
+  fotocasa:
+    enabled: true
+    delay_seconds: 8
+    max_pages: 4
+  pisos_com:
+    enabled: true
+    delay_seconds: 6
+    max_pages: 4
+  habitaclia:
+    enabled: false   # cobertura Málaga limitada
+    delay_seconds: 6
+    max_pages: 2
+
+scoring:
+  weights:
+    zone_priority: 30
+    price_per_m2: 25
+    obra_nueva: 15
+    certificacion_energetica: 10
+    garaje: 5            # ya es obligatorio, pero pondera calidad (incluido vs aparte)
+    piscina: 5
+    exterior_terraza: 5
+    ascensor: 5
+
+output:
+  csv: data/results.csv
+  json: data/results.json
+  top_n_html: data/top.html  # resumen visual de los mejores

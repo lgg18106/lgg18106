@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piso_finder"
+version = "0.1.0"
+description = "Buscador de viviendas Málaga/Costa del Sol con filtros y scoring"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=4.9",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "tenacity>=8.2",
+    "rich>=13.7",
+]
+
+[project.scripts]
+piso_finder = "piso_finder.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

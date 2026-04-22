@@ -745,7 +745,192 @@ Si quisieras hacer **una apuesta puramente financiera** con un segundo activo m�
 
 ---
 
-## 16. Recomendación final
+## 16. Perfil actualizado y contexto real (abril 2026)
+
+Datos consolidados tras reconsulta:
+
+| Dato | Valor |
+|---|---|
+| Edad | **37 años** |
+| Puesto | **Ayudante Doctor** UMA con acreditación ANECA de Contratado Doctor |
+| Facultad / campus | **Económicas — Campus El Ejido (Málaga centro)**, no Teatinos |
+| Bruto anual | **~37.500 €** |
+| Neto mensual estimado (12) | **~2.450 €** |
+| Ahorros propios | 15.000 € |
+| Aporte familiar disponible | **~20.000 €** (efectivo) o posibilidad de aval |
+| Estrategia de compra | **Comprar solo** (sin incluir a Paola) |
+| Límite de presupuesto | **~240.000 €**, costa, cercanía a Málaga, horizonte "vivir + inversión" |
+
+### 16.1 Implicaciones clave del nuevo contexto
+
+1. **Facultad en El Ejido** reorienta el mapa de distancias:
+   - Torre del Mar: 40–50 min (más lejos de lo asumido)
+   - Rincón de la Victoria: 15–20 min
+   - **Torremolinos: 15–20 min** + Cercanías C1 directa
+   - Benalmádena: 25–30 min + C1
+   - **Fuengirola: 30–40 min + C1 directa a Málaga-Centro**
+2. Con 37 años, quedan **descartadas** las hipotecas joven genéricas (BBVA, Santander, ING, CaixaBank → todas cortan en 35) y el **aval ICO** (corta en 36 años cumplidos).
+3. La única palanca de **>80 % de financiación** compatible con tu edad es el **Programa Garantía Vivienda Andalucía** (hasta 40 años inclusive, sin topes de renta ni patrimonio).
+
+---
+
+## 17. Programa Garantía Vivienda Andalucía — pieza central del plan
+
+### 17.1 Qué es y por qué cambia el juego
+
+Convenio Junta de Andalucía ↔ bancos adheridos. La Junta **avala el tramo del 80 % al 100 %** del menor entre precio y tasación. Efecto: puedes firmar al **100 % de financiación** poniendo solo gastos.
+
+### 17.2 Requisitos (verificados en web oficial Junta)
+
+- Persona física, 18–**40 años incluidos** al solicitar la garantía.
+- **Empadronamiento en Andalucía**.
+- **No ser titular** de pleno dominio sobre otra vivienda en territorio nacional.
+- Contrato de arras / preacuerdo de compraventa firmado.
+- Préstamo autorizado por entidad financiera colaboradora.
+- Destinar vivienda a **residencia habitual mínimo 2 años**.
+- **Precio máximo vivienda**: **295.240 €** (ampliable a **354.288 €** con certificado energético A o B).
+- **No hay tope de renta ni patrimonio** (lo confirma la web de la Junta; el filtro real lo pone el banco vía solvencia).
+
+### 17.3 Entidades colaboradoras y contactos
+
+| Banco | Email/teléfono | Producto comercial |
+|---|---|---|
+| **Ibercaja** | viviendajovenandalucia@ibercajaconnect.es · 976 748 866 | Hipoteca Joven Andalucía (edad extendida a 40) |
+| **Unicaja** | HipotecaJovenAndalucia@unicaja.es · 952 076 263 | Hipoteca Joven Andalucía |
+| **Cajasur (Kutxabank)** | 900 247 247 | Hipoteca acogida al programa |
+| CaixaBank, Santander, Caja Rural | vía oficina | Menor flexibilidad documentada |
+
+> Nombre confuso: pregunta siempre "**hipoteca acogida al Programa Garantía Vivienda Andalucía**", no "hipoteca joven" a secas — hay comerciales que no conocen el producto adherido.
+
+### 17.4 Urgencia de plazos
+
+- **Plazo de solicitud**: hasta el **20 de junio de 2026**, salvo **agotamiento previo del crédito**.
+- Marzo 2026: la Junta amplió la dotación en **+10 M €** por alta demanda → señal de que el fondo estaba cerca de agotarse.
+- **Ventana útil real**: semanas, no meses. Necesitas arras firmadas antes de mayo-junio 2026.
+
+---
+
+## 18. Capacidad real con bruto 37.500 € y 20 k familiar
+
+### 18.1 Cálculo de techo prestable
+
+- Neto mensual estimado: **2.450 €**.
+- Cuota máx. 35 %: **~860 €/mes**.
+
+| Plazo | TIN fijo bonificado 2,5 % | TIN stress test 4 % |
+|---|---|---|
+| 30 años | **~217.000 €** | ~180.000 € |
+| 35 años | **~240.000 €** | ~195.000 € |
+
+**Lectura**: 240 k es alcanzable **solo forzando a 35 años** y con entidad que no aplique stress test agresivo. Ibercaja y Unicaja son más flexibles con perfil PDI laboral; Santander/BBVA más estrictos.
+
+### 18.2 Uso óptimo de los 20.000 € familiares
+
+**Opción A — Efectivo para gastos** (recomendada)
+- Piso 240 k segunda mano: ITP 7 % = 16.800 € + notaría/registro/gestoría/tasación ~2.500 € = **~19.300 €**. Cabe justo en 20 k.
+- Obra nueva: IVA 10 % + AJD 1,2 % = ~28.000 €. **No cabe**.
+
+**Opción B — Familia como avalistas**
+- Sube techo prestable un 15–25 % (de 217 k a 260 k a 30 años).
+- Implica responsabilidad solidaria del avalista. Conversación familiar seria previa.
+
+### 18.3 Recomendación de compra — no estirar hasta 240 k
+
+| Objetivo | Cuota mensual | % esfuerzo | Margen |
+|---|---|---|---|
+| 240 k a 35 a | ~860 € | 35 % | **Sin margen** — riesgo alto si Euríbor sube |
+| **205 k a 30 a** | **~780 €** | **32 %** | Colchón 200–300 €/mes |
+| 190 k a 30 a | ~725 € | 30 % | Máxima holgura |
+
+**Recomendación**: **apuntar a 195–215 k de precio de compra** para mantener cuota ≤ 32 % del neto. Con Programa Garantía Vivienda Andalucía + 20 k para gastos, esto es ejecutable **sin avalistas ni riesgo**.
+
+---
+
+## 19. Zonas actualizadas — compra individual desde Económicas (El Ejido)
+
+Reordeno el ranking dado que la facultad está en El Ejido y la compra es individual:
+
+| Zona | Distancia a El Ejido | €/m² 2026 | Con 205 k compras | Con 240 k compras |
+|---|---|---|---|---|
+| **Fuengirola (Los Boliches / Torreblanca)** | 30 min + C1 directa | 3.500–4.200 | 55–60 m², 2 dorm | 60–70 m², 2 dorm reformado |
+| **Las Lagunas (Mijas Costa)** | 30 min coche | 2.800–3.300 | 70–75 m², 2-3 dorm | 80–90 m², reformado con garaje |
+| **La Cala de Mijas** | 40 min coche | 3.000–3.500 | 65–70 m², 2 dorm | 75–85 m², con piscina |
+| **Torremolinos Playamar 2ª línea** | 15–20 min + C1 | 2.500–3.100 | 70–80 m² | 85–95 m² con terraza |
+| **Torremolinos Los Álamos interior** | 15–20 min + C1 | 2.500–3.200 | 75–85 m² con piscina comunitaria | 90–100 m² obra reciente |
+| **Rincón de la Victoria (Cotomar/Añoreta)** | 15–20 min coche | 3.300–3.700 | 60–65 m² | 70–80 m², 2 dorm |
+| **Benalmádena Arroyo Miel / Costa** | 25–30 min + C1 | 2.800–3.500 | 65–75 m² | 75–85 m² |
+
+### 19.1 Top-3 para tu perfil exacto
+
+1. **Torremolinos — Los Álamos interior / Playamar 2ª línea**. Cercanías C1 directa a Málaga-Centro Alameda (15 min), precio asequible (descuento vs. Carihuela), paseo marítimo, obra reciente disponible con piscina y garaje. Ratio km²/€ óptimo.
+2. **Las Lagunas (Mijas Costa)**. Excelente precio por m² para urbanizaciones con piscina+garaje, estilo residencial real (no turístico). A cambio exige coche.
+3. **Fuengirola — Torreblanca / Los Boliches**. Cercanías directa, vida de barrio; pero con 205 k estás justo para un 2 dorm no reformado. Si subes a 240 k, entra en opciones decentes.
+
+### 19.2 Descartados con los datos actuales
+
+- **Mijas Golf**: 6–8 km del mar, coche obligatorio, gastos comunidad 200–400 €, revalorización inferior (+6–9 % vs. +14 %), stock enorme y demanda británica enfriada post-Brexit. "Barato y lujoso" es ilusión óptica.
+- **Torre del Mar / Vélez-Málaga**: 40–50 min a El Ejido sin tren = commuting insostenible.
+- **Benalmádena Pueblo / Mijas Pueblo**: vistas sí, pero sin playa a pie y lejos del tren.
+- **Carihuela (Torremolinos)**: saturación VUT + edificios años 70 con derramas grandes.
+
+---
+
+## 20. Criterios de búsqueda operativos
+
+Para alimentar los filtros del programa de búsqueda (sección 21):
+
+```
+Rango precio:       200.000 € – 250.000 €
+Habitaciones:       ≥ 2
+Garaje:             Sí (obligatorio — multiplica demanda en reventa)
+Piscina:            Sí (obligatorio)
+Obra nueva:         Preferente (no excluyente si < 10 años y certificación B o mejor)
+Estado:             Disponible — excluir ocupados / alquilados / con inquilino
+                    / en régimen especial / subastas / sujetos a VUT con conflicto
+Superficie mínima:  70 m² (60 m² aceptable en Fuengirola centro)
+Ascensor:           Sí
+Exterior:           Sí
+Certificación:      A o B preferente (amplía tope Junta a 354.288 €)
+Zonas prioridad 1:  Torremolinos (Playamar 2ª línea, Los Álamos, El Pinar no-interior)
+                    Las Lagunas (Mijas Costa)
+                    La Cala de Mijas
+Zonas prioridad 2:  Fuengirola (Torreblanca, Los Boliches, Carvajal)
+                    Rincón de la Victoria (Cotomar, Añoreta, Torre de Benagalbón)
+                    Benalmádena (Arroyo de la Miel, Costa)
+Zonas descartadas:  Mijas Golf, Mijas Pueblo interior, Torre del Mar,
+                    Nerja, Torrox, Carihuela, centros históricos premium
+Financiación:       Entidad acepta ≥ 80 % sobre tasación vía Programa Garantía
+                    Vivienda Andalucía (Ibercaja / Unicaja / Cajasur)
+```
+
+---
+
+## 21. Programa automático de búsqueda — `piso_finder`
+
+Desarrollo en Python incluido en este repositorio, carpeta `piso_finder/`. Ver `piso_finder/README.md` para uso.
+
+Características:
+- Config en YAML editable (`config.yaml`) ya prerrellenado con tus criterios.
+- Scrapers modulares: **Idealista, Fotocasa, Pisos.com, Habitaclia**.
+- Normalización a un modelo común (`Property`).
+- Filtro post-fetch por zonas, características, disponibilidad real (detecta banderas de "ocupado", "alquilado", "subasta").
+- Scoring por zona × precio/m² × características → ranking.
+- Salida a CSV para abrir en Excel + JSON para auditar.
+- Respeta `robots.txt`, incluye delays configurables, User-Agent declarado.
+- Advertencia: Idealista tiene **API oficial** (OAuth2, solicitar credenciales) — el módulo soporta ambos modos.
+
+Uso básico:
+
+```bash
+cd piso_finder
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python -m piso_finder.cli --config config.yaml --output data/results.csv
+```
+
+---
+
+## 22. Recomendación final
 
 1. **Confirma tu neto mensual real** y recalcula la tabla 9.3 (es el dato que falta para cerrar la cifra exacta).
 2. Si la familia puede/quiere ayudar, **preferir donación sobre aval** — igualmente eficaz, fiscalmente barato en Andalucía y sin responsabilidad cruzada a 30 años.
