@@ -260,7 +260,7 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
     except Exception:
         pass
 
-    # Plan B: Playwright (solo si lo anterior no dio precio/ubicación).
+    # Plan C: Playwright local.
     try:
         from playwright.sync_api import sync_playwright
     except ImportError as e:
@@ -269,79 +269,86 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
             "Instala Playwright: pip install playwright playwright-stealth && playwright install chromium"
         ) from e
 
+    # Intenta importar playwright-stealth (v2.x API) o v1.x como fallback.
+    stealth_wrapper = None  # v2: context manager wrapping sync_playwright()
+    stealth_sync_legacy = None  # v1: patch a page
     try:
-        from playwright_stealth import stealth_sync  # type: ignore
-    except ImportError:
-        stealth_sync = None
+        from playwright_stealth import Stealth  # type: ignore
+        stealth_wrapper = Stealth()
+    except Exception:
+        try:
+            from playwright_stealth import stealth_sync as _legacy  # type: ignore
+            stealth_sync_legacy = _legacy
+        except Exception:
+            pass
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=headless,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--disable-features=IsolateOrigins,site-per-process",
-            ],
-        )
+    def _launch_browser(pw):
+        # Preferimos usar Chrome real instalado (más stealth que el Chromium
+        # de Playwright); si no existe, caemos a chromium por defecto.
+        common_args = [
+            "--disable-blink-features=AutomationControlled",
+            "--disable-features=IsolateOrigins,site-per-process",
+        ]
+        for channel in ("chrome", None):
+            try:
+                return pw.chromium.launch(
+                    headless=headless,
+                    channel=channel,
+                    args=common_args,
+                )
+            except Exception:
+                continue
+        return pw.chromium.launch(headless=headless, args=common_args)
+
+    def _run(pw):
+        browser = _launch_browser(pw)
         context = browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/121.0.0.0 Safari/537.36"
+                "Chrome/131.0.0.0 Safari/537.36"
             ),
             locale="es-ES",
             timezone_id="Europe/Madrid",
             viewport={"width": 1366, "height": 820},
+            extra_http_headers={
+                "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+                "Sec-Ch-Ua": '"Chromium";v="131", "Not_A Brand";v="24"',
+                "Sec-Ch-Ua-Mobile": "?0",
+                "Sec-Ch-Ua-Platform": '"macOS"',
+            },
         )
         page = context.new_page()
-        if stealth_sync is not None:
+        if stealth_sync_legacy is not None:
             try:
-                stealth_sync(page)
+                stealth_sync_legacy(page)
             except Exception:
                 pass
 
-        response = page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-        status = response.status if response else None
-        if status and status >= 400:
-            html = page.content()
-            if dump_html:
+        # Ir a la home primero para que DataDome establezca cookies "humanas"
+        try:
+            page.goto("https://www.idealista.com/", wait_until="domcontentloaded", timeout=timeout_ms)
+            page.wait_for_timeout(2000)
+            # aceptar cookies
+            for sel in [
+                "#didomi-notice-agree-button",
+                "button:has-text('Aceptar')",
+                "button:has-text('Aceptar y continuar')",
+            ]:
                 try:
-                    with open(dump_html, "w", encoding="utf-8") as f:
-                        f.write(html)
+                    page.locator(sel).first.click(timeout=2000)
+                    break
                 except Exception:
-                    pass
-            browser.close()
-            raise RuntimeError(f"HTTP {status} al cargar {url} (posible antibot).")
+                    continue
+            # pequeño movimiento de ratón "humano"
+            page.mouse.move(200, 300)
+            page.mouse.move(500, 600)
+            page.wait_for_timeout(1500)
+        except Exception:
+            pass
 
-        # Banner de cookies Idealista (Didomi)
-        for sel in [
-            "#didomi-notice-agree-button",
-            "button:has-text('Aceptar')",
-            "button:has-text('Aceptar y continuar')",
-        ]:
-            try:
-                page.locator(sel).first.click(timeout=2500)
-                break
-            except Exception:
-                continue
-
-        page.wait_for_timeout(2500)
-
-        # Detección básica de captcha / página de bloqueo
-        html_lower = page.content().lower()
-        if any(k in html_lower for k in [
-            "cloudflare", "captcha", "verificamos que es usted una persona",
-            "access denied", "just a moment", "request unsuccessful",
-        ]) and "application/ld+json" not in html_lower:
-            if dump_html:
-                try:
-                    with open(dump_html, "w", encoding="utf-8") as f:
-                        f.write(page.content())
-                except Exception:
-                    pass
-            browser.close()
-            raise RuntimeError(
-                f"Página de bloqueo/captcha detectada en {url}. Prueba --show-browser."
-            )
+        page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+        page.wait_for_timeout(4000)  # dejar que DataDome complete el challenge
 
         html = page.content()
         if dump_html:
@@ -350,7 +357,33 @@ def fetch_property(url: str, headless: bool = True, timeout_ms: int = 60000, dum
                     f.write(html)
             except Exception:
                 pass
+
+        # Si no aparece JSON-LD y sí signos de bloqueo, declarar bloqueo.
+        low = html.lower()
+        if "application/ld+json" not in low and any(
+            k in low
+            for k in (
+                "datadome", "cloudflare", "captcha", "access denied",
+                "just a moment", "request unsuccessful",
+                "verificamos que es usted una persona",
+            )
+        ):
+            browser.close()
+            raise RuntimeError(
+                "Bloqueo antibot detectado. Prueba --show-browser y pasa el "
+                "captcha a mano una vez."
+            )
+
         browser.close()
+        return html
+
+    if stealth_wrapper is not None:
+        # API v2.x: Stealth().use_sync(sync_playwright()) como CM
+        with stealth_wrapper.use_sync(sync_playwright()) as pw:
+            html = _run(pw)
+    else:
+        with sync_playwright() as pw:
+            html = _run(pw)
 
     return _parse_html(url, html)
 
